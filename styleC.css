@@ -392,6 +392,9 @@ color: #422304
 .tshirt {
 flex-direction: column;
 }
+.tshirt img {
+  width: 30vh;
+}
 }
 
 /*======== Footer Styling ===== */
