@@ -93,7 +93,7 @@ header .shopping span{
   padding: 3px 5px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .nav-bar {
     display: none;
     position: absolute;
@@ -257,6 +257,42 @@ display: flex;
   background-color: #1C1F25;
   color: #fff;
 }
+
+@media screen and (max-width: 775px) {
+  .card {
+   width: 100%;  
+   left: 100%;   
+ }
+
+
+
+ .active .card {
+   left: 0;  
+ }
+}
+
+
+@media screen and (max-width: 480px) {
+ .page-header {
+   padding: 0.5rem; 
+ }
+
+ .nav-bar a {
+   font-size: 1rem;  
+   padding: 0.5rem; 
+ }
+
+
+.card {
+   width: 100%;
+   left: 100%;  
+ }
+
+ .active .card {
+   left: 0;  
+ }
+}
+
 .listCard li{
   display: grid;
   grid-template-columns: 100px repeat(3, 1fr);
