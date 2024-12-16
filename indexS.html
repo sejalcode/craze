@@ -1,0 +1,149 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now</title>
+    <link rel="stylesheet" href="styleS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+</head>
+<body class="">
+    
+    <div class="container">
+        <header>
+            <div class="page-header">
+                <div class="logo">
+                  <img src="./craze (2).png">
+                </div>
+              
+                 <a id="menu-icon" class="center" onclick="onMenuClick()">
+                  <i class="fa fa-bars"></i>
+                </a>
+          
+                <div id="navigation-bar" class="nav-bar">
+                  <a href="./index.html" >Home</a>
+                  <a href="./indexC.html">Collection</a>
+                  <a href="./indexB.HTML">Blog</a>
+                  <a href="#" class="like">🤎</a>
+                  <a href="#" class="shopping"> <img src="/cart.png">
+                    <span class="quantity">0</span></a>
+                </div>
+              </div>
+           
+        </header>
+    
+        <div class="list">
+          
+        </div>
+        <!-- <ul class="fav-items">
+
+        </ul> -->
+        
+    </div>
+    <div class="card">
+        <h1>Cart</h1>
+        <ul class="listCard">
+        </ul>
+       
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+    <div>
+    <h1 class="arrival">New Arrival </h1>
+    <p class="arrivals">Seasonal Sale 50% off</p>
+    </div>
+    <div class="list">
+            
+        <div class="item">
+            <img src="/1S.jpeg" alt="Product 1">
+            <div class="title">The Easywear Collection</div>
+            <div class="price">80,000</div>
+            <div class="add">   
+            <button onclick="addToCard(0)">Add To Cart</button>
+            <button class="fav" onclick="addToFav(0)">❤️</button>
+                        
+        </div>
+        </div>
+        <div class="item">
+            <img src="/2S.jpeg" alt="Product 2">
+            <div class="title">Luxury/High-End</div>
+            <div class="price">120,000</div>
+            <div class="add">
+            <button onclick="addToCard(1)">Add To Cart</button>  
+            <button class="fav" onclick="addToFav(1)">❤️</button>       
+            </div>
+        </div>
+        <div class="item">
+            <img src="/3S.jpeg" alt="Product 3">
+            <div class="title">Green Threads</div>
+            <div class="price">150,000</div>
+            <div class="add">
+            <button onclick="addToCard(2)">Add To Cart</button>
+            <button class="fav"onclick="addToFav(2)">❤️</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/4S.jpg" alt="Product 4">
+            <div class="title">Comfy Couture</div>
+            <div class="price">75,000</div>
+            <div class="add">
+            <button onclick="addToCard(3)">Add To Cart</button>
+            <button class="fav" onclick="addToFav(3)">❤️</button>
+             </div>
+        </div>
+        <div class="item">
+            <img src="/5S.jpeg" alt="Product 5">
+            <div class="title">Street Rebel</div>
+            <div class="price">45,000</div>
+            <div class="add">
+           <button onclick="addToCard(4)">Add To Cart</button>
+           <button class="fav" onclick="addToFav(4)">❤️</button>
+        </div>
+        </div>
+        <div class="item">
+            <img src="/6S.jpg" alt="Product 6">
+            <div class="title">Elite Attire</div>
+            <div class="price">180,000</div>
+            <div class="add">
+           <button onclick="addToCard(5)">Add To Cart</button>
+            <button class="fav" onclick="addToFav(5)">❤️</button>
+            </div>
+        </div>
+    </div>
+
+
+ <!-- ==================  FOOTER =================== -->
+    <footer class="footer">
+        <div class="footer__content container">
+            <div class="footer__logo">
+                <img src="/craze (2).png" alt="Brand Logo">
+            </div>
+    
+            <div class="footer__links">
+                <ul>
+                    <li> <a href="./index.html" >Home</a></li>
+                    <li><a href="./indexS.html">Shop Now</a></li>
+                    <li><a href="./indexC.html">Collection</a></li>
+                    <li><a href="./indexB.HTML">Blog</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__social">
+                <a href="#" target="_blank" class="social-link"><i class="ri-instagram-line"></i></a>
+                <a href="#" target="_blank" class="social-link"><i class="ri-facebook-line"></i></a>
+                <a href="#" target="_blank" class="social-link"><i class="ri-pinterest-line"></i></a>
+                <a href="#" target="_blank" class="social-link"><i class="ri-linkedin-box-line"></i></a>
+            </div>
+        </div>
+    
+        <div class="footer__bottom container">
+            <p>&copy; 2024 Your Brand Name. All rights reserved.</p>
+        </div>
+    </footer>
+       <!--=============== JS ===============-->
+    <script src="scriptS.js"></script>
+</body>
+</html> 

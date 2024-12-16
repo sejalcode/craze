@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now</title>
+    <link rel="stylesheet" href="styleC.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+</head>
+<body class="">
+    
+    <div class="container">
+        <header>
+            <div class="page-header">
+                <div class="logo">
+                  <img src="/craze (2).png">
+                </div>
+              
+                 <a id="menu-icon" class="center" onclick="onMenuClick()">
+                  <i class="fa fa-bars"></i>
+                </a>
+          
+                <div id="navigation-bar" class="nav-bar">
+                  <a href="./index.html" >Home</a>
+                  <a href="./indexC.html">Collection</a>
+                  <a href="./indexB.HTML">Blog</a>
+                  <a href="./indexS.html">Shop Now</a>
+                  <a href="#">🤎</a>
+                  <a href="#" class="shopping"> <img src="/cart.png">
+                    <span class="quantity">0</span></a>
+                </div>
+              </div>
+           
+        </header>
+ <!--==================== MAIN ====================-->
+        <section class="Collection-header">
+            <div class="Collection-bar">
+                <video autoplay muted loop poster="./1B.jpg">
+                    <source src="/collection.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="content">
+                    <h3>Latest Collections</h3>
+                    <p>"Discover Your Style: Exclusive Fashion Picks for Every Occasion"</p>
+                    <a href="/indexS.html"><button class="btn">Shop Now</button></a>
+                
+                </div>
+            </div>
+        </section>
+        
+  
+     
+    </section>
+        <div class="list">
+          
+        </div>
+    </div>
+    <div class="card">
+        <h1>Cart</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+
+
+    <div class="list">
+            
+        <div class="item">
+            <img src="./1.jpg" alt="Product 1">
+            <div class="title">Classic Crewneck T-Shirt</div>
+            <div class="info">A staple in every wardrobe, available in multiple colors.</div>
+            <div class="price">80,000</div>
+            <button onclick="addToCard(0)">Add To Cart</button>
+        </div>
+        <div class="item">
+            <img src="./2.jpeg" alt="Product 2">
+            <div class="title">Wide-Legged Jeans</div>
+            <div class="info">Relaxed and breathable, perfect for casual or boho styles.</div>
+            <div class="price">120,000</div>
+            <button onclick="addToCard(1)">Add To Cart</button>
+        </div>
+        <div class="item">
+            <img src="./3.jpg" alt="Product 3">
+            <div class="title">Classic Bomber Jacket</div>
+            <div class="info">A versatile, cool outerwear piece that suits both casual and semi-formal outfits.</div>
+            <div class="price">150,000</div>
+            <button onclick="addToCard(2)">Add To Cart</button>
+        </div>
+        <div class="item">
+            <img src="/4.jpg" alt="Product 4">
+            <div class="title">Chunky Knit Sweater</div>
+            <div class="info">A cozy, oversized sweater for cold weather.</div>
+            <div class="price">75,000</div>
+            <button onclick="addToCard(3)">Add To Cart</button>
+        </div>
+        <div class="item">
+            <img src="./5.jpg" alt="Product 5">
+            <div class="title">Cozy Pajama Set</div>
+            <div class="info"> Comfortable yet stylish loungewear that works for both relaxation and outdoor activities.</div>
+            <div class="price">45,000</div>
+            <button onclick="addToCard(4)">Add To Cart</button>
+        </div>
+        <div class="item">
+            <img src="./6.jpg" alt="Product 6">
+            <div class="title">Leather Crossbody Bag</div>
+            <div class="info"> A minimalist, chic accessory that pairs with any outfit.</div>
+            <div class="price">180,000</div>
+            <button onclick="addToCard(5)">Add To Cart</button>
+        </div>
+    </div>
+   <section id="tshirt">
+    <div class="tshirt">
+    <img src="./knowme.jpg" alt="">
+    <div class="tcontent">
+        <h3>Premium T-Shirts Collection: Redefining Everyday Style</h3>
+        <p>Our Premium T-Shirts Collection is designed for those who seek the perfect balance of comfort, quality, and style. Crafted with meticulous attention to detail, each t-shirt in this collection
+         is made using premium fabrics that are soft, breathable, and durable. Whether you're dressing up for a casual outing or layering for a smart-casual look, these t-shirts offer unmatched versatility.</p>
+    </div>
+    </div>
+   </section>
+
+    <!-- ==================  FOOTER =================== -->
+    <footer class="footer">
+        <div class="footer__content container">
+            <div class="footer__logo">
+                <img src="/craze (2).png" alt="Brand Logo">
+            </div>
+    
+            <div class="footer__links">
+                <ul>
+                    <li> <a href="./index.html" >Home</a></li>
+                    <li><a href="./indexS.html">Shop Now</a></li>
+                    <li><a href="./indexC.html">Collection</a></li>
+                    <li><a href="./indexB.HTML">Blog</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__social">
+                <a href="#" target="_blank" class="social-link"><i class="ri-instagram-line"></i></a>
+                <a href="#" target="_blank" class="social-link"><i class="ri-facebook-line"></i></a>
+                <a href="#" target="_blank" class="social-link"><i class="ri-pinterest-line"></i></a>
+                <a href="#" target="_blank" class="social-link"><i class="ri-linkedin-box-line"></i></a>
+            </div>
+        </div>
+    
+        <div class="footer__bottom container">
+            <p>&copy; 2024 Your Brand Name. All rights reserved.</p>
+        </div>
+    </footer>
+       <!--=============== JS ===============-->
+    <script src="scriptC.js"></script>
+</body>
+</html>
