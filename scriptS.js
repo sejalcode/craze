@@ -69,6 +69,15 @@ function reloadFav() {
     });
 }
 
+function addToCard(key){
+    if(listCards[key] == null){
+
+        listCards[key] = JSON.parse(JSON.stringify(products[key]));
+        listCards[key].quantity = 1;
+    }
+    reloadCard();
+}
+
 function reloadCard(){
     listCard.innerHTML = '';
     let count = 0;
@@ -89,16 +98,18 @@ function reloadCard(){
              </div>`;
          listCard.appendChild(newDiv);
         }
-    });
+     
+        console.log(`Image path: ${value.image}`);
+    })
     total.innerText = totalPrice.toLocaleString();
     quantity.innerText = count;
 }
-
-function changeQuantity(key, newQuantity) {
-    if (newQuantity === 0) {
+function changeQuantity(key, quantity){
+    if(quantity == 0){
         delete listCards[key];
-    } else {
-        listCards[key].quantity = newQuantity;
+    }else{
+        listCards[key].quantity = quantity;
+        listCards[key].price = quantity * products[key].price;
     }
     reloadCard();
 }

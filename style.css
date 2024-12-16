@@ -73,7 +73,7 @@ a {
     background-color: #5836029d;
     width: 40%;
     height: 100%;
-    padding: 6rem 3.5rem 4.5rem;
+    padding: 6rem .5rem 4.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
